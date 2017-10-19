@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="zepto/zepto.js"></script>
+		<script src="swiper/swiper.min.js"></script>
+		<script src="bootstrap/js/rem.js"></script>
+		<link rel="stylesheet" type="text/css" href="swiper/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	</head>
+	<body>
+		<div class="nav">
+			<img src="images/index_03.png"/>
+			<input type="text" placeholder="搜索今日最新推荐" />
+		</div>
+		<div class="swiper-container barent">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="images/barent.png"/></li>
+				<li class="swiper-slide"><img src="images/barent.png"/></li>
+				<li class="swiper-slide"><img src="images/barent.png"/></li>
+			</ul>
+		</div>
+		<ul class="nav2">
+			<li>
+				<img src="images/index_07.png"/>
+				<p>美食</p>
+			</li>
+			<li>
+				<img src="images/index_09.png"/>
+				<p>水果</p>
+			</li>
+			<li>
+				<img src="images/index_11.png"/>
+				<p>干货</p>
+			</li>
+			<li>
+				<img src="images/index_13.png"/>
+				<p>营养师</p>
+			</li>
+			<li>
+				<img src="images/index_15.png"/>
+				<p>外卖</p>
+			</li>
+			<li>
+				<img src="images/index_22.png"/>
+				<p>定时</p>
+			</li>
+			<li>
+				<img src="images/index_23.png"/>
+				<p>定制菜谱</p>
+			</li><li>
+				<img src="images/index-1_03.png"/>
+				<p>月子餐</p>
+			</li>
+			
+			<li>
+				<img src="images/index-1_05.png"/>
+				<p>甜点</p>
+			</li>
+			<li>
+				<img src="images/index-1_07.png"/>
+				<p>更多</p>
+			</li>
+		</ul>
+		<article class="body1">
+			<div class="top">
+				<p></p>
+				<p>热门菜谱 BEST</p>
+				<p></p>
+			</div>
+			<div class="bottom mar">
+				<div><img src="images/index_27.png"/></div>
+				<div>
+					<p>红烧排骨</p>
+					<p>红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨</p>
+				</div>
+			</div>
+			<div class="bottom bor">
+				<div><img src="images/index_30.png"/></div>
+				<div>
+					<p>蔬菜拌面</p>
+					<p>红烧排骨红烧排骨红红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨红烧排骨</p>
+				</div>
+			</div>
+		</article>
+		<article class="body2">
+			<div class="top">
+				<p></p>
+				<p>为你优选 BEST</p>
+				<p></p>
+			</div>
+			<ul>
+				<li><img src="images/index_32.png"/></li>
+				<li><img src="images/index_34.png"/></li>
+				<li><img src="images/index_36.png"/></li>
+			</ul>
+			
+			</div>
+		</article>
+		<ul class="footer">
+			<li class="bj">
+				<img src="images/footer_03.png"/>
+				<p>首页</p>
+			</li>
+			<li>
+				<img src="images/footer_05.png"/>
+				<p>首页</p>
+			</li>
+			<li>
+				<img src="images/footer_07.png"/>
+				<p>首页</p>
+			</li>
+			<li>
+				<img src="images/footer_09.png"/>
+				<p>首页</p>
+			</li>
+			<li>
+				<img src="images/footer_11.png"/>
+				<p>首页</p>
+			</li>
+		</ul>
+		<script>
+			var sw=new Swiper(".barent",{
+				autoplay:2000
+			})
+			$(".footer li").click(function(){
+				$(this).addClass("bj").siblings().removeClass("bj")
+			})
+		</script>
+	</body>
+</html>
